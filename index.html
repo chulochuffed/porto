@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- ============ SEO META ============ -->
+  <title>Chulo Chuffed — Ethical Hacker &amp; Security Researcher</title>
+  <meta name="title" content="Chulo Chuffed — Ethical Hacker &amp; Security Researcher" />
+  <meta name="description" content="Portfolio profesional Chulo Chuffed — Ethical Hacker, Security Researcher, Bug Hunter, dan Web Developer. Jelajahi project, riset keamanan, dan tulisan seputar cybersecurity, Linux, dan networking." />
+  <meta name="keywords" content="Chulo Chuffed, Ethical Hacker, Security Researcher, Bug Hunter, Web Developer, Cybersecurity, Bug Bounty, OSINT, Linux, Networking, Penetration Testing" />
+  <meta name="author" content="Chulo Chuffed" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://chulochuffed.is-a.dev/" />
+
+  <!-- ============ OPEN GRAPH ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chulochuffed.is-a.dev/" />
+  <meta property="og:title" content="Chulo Chuffed — Ethical Hacker &amp; Security Researcher" />
+  <meta property="og:description" content="Ethical Hacker • Security Researcher • Bug Hunter • Developer. Jelajahi portfolio, riset keamanan, dan tulisan seputar cybersecurity." />
+  <meta property="og:image" content="https://chulochuffed.is-a.dev/assets/images/og-cover.jpg" />
+  <meta property="og:locale" content="id_ID" />
+
+  <!-- ============ TWITTER CARD ============ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://chulochuffed.is-a.dev/" />
+  <meta name="twitter:title" content="Chulo Chuffed — Ethical Hacker &amp; Security Researcher" />
+  <meta name="twitter:description" content="Ethical Hacker • Security Researcher • Bug Hunter • Developer." />
+  <meta name="twitter:image" content="https://chulochuffed.is-a.dev/assets/images/og-cover.jpg" />
+
+  <!-- ============ FAVICON ============ -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="alternate icon" href="assets/icons/favicon.svg" />
+  <meta name="theme-color" content="#05070a" />
+
+  <!-- ============ FONTS ============ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ============ ICONS (Font Awesome) ============ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPihcmnhM9GVjfKye/dxAUlbUYd8ZAqDXpTQjnUxc4mHy2fBP5CKvGqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ============ STYLES ============ -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ LOADING SCREEN ============ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-content">
+      <span class="loader-bracket">&lt;</span>
+      <span class="loader-text">chulo_chuffed</span>
+      <span class="loader-bracket">/&gt;</span>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ============ CURSOR GLOW ============ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ============ SKIP LINK ============ -->
+  <a href="#home" class="skip-link">Lewati ke konten utama</a>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Navigasi utama">
+      <a href="#home" class="nav-logo" aria-label="Chulo Chuffed — Beranda">
+        <span class="logo-bracket">&lt;</span>CC<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>About</a></li>
+        <li><a href="#skills" class="nav-link" data-nav>Skills</a></li>
+        <li><a href="#portfolio" class="nav-link" data-nav>Portfolio</a></li>
+        <li><a href="#blog" class="nav-link" data-nav>Blog</a></li>
+        <li><a href="#contact" class="nav-link" data-nav>Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ============ HERO / HOME ============ -->
+    <section id="home" class="hero" aria-label="Beranda">
+      <canvas id="matrixCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--1" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow--2" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="hero-eyebrow reveal">
+          <span class="status-dot"></span> tersedia untuk kolaborasi &amp; bug bounty
+        </p>
+
+        <h1 class="hero-title reveal">CHULO CHUFFED</h1>
+
+        <p class="hero-role reveal" aria-live="polite">
+          <span id="typedRole"></span><span class="typed-cursor" aria-hidden="true">|</span>
+        </p>
+
+        <p class="hero-desc reveal">
+          Passionate about Cybersecurity, Web Security, Linux, Networking, Bug Bounty, OSINT, dan Secure Development.
+        </p>
+
+        <div class="hero-actions reveal">
+          <a href="#portfolio" class="btn btn-primary" data-ripple>
+            <span>View Portfolio</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+          <a href="#contact" class="btn btn-ghost" data-ripple>
+            <span>Contact Me</span>
+          </a>
+        </div>
+
+        <div class="hero-terminal reveal" role="img" aria-label="Simulasi terminal menampilkan perintah whoami">
+          <div class="terminal-bar">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="terminal-title">zsh — chulochuffed</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">root@chulochuffed</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> whoami</p>
+            <p class="terminal-output">chulo_chuffed // ethical_hacker &amp; developer</p>
+            <p><span class="prompt">root@chulochuffed</span><span class="colon">:</span><span class="path">~</span><span class="dollar">$</span> <span class="blink-cursor">_</span></p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Gulir ke bawah">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section about" aria-label="Tentang saya">
+      <div class="container">
+        <p class="section-eyebrow reveal">01 — About</p>
+        <h2 class="section-title reveal">Tentang Saya</h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Selamat datang di ruang digital saya. Website ini adalah tempat saya membagikan perjalanan belajar
+              di bidang <strong>cybersecurity</strong>, <strong>web development</strong>, <strong>Linux</strong>,
+              dan <strong>networking</strong> — mulai dari konsep dasar hingga eksplorasi yang lebih mendalam.
+            </p>
+            <p>
+              Di sini Anda akan menemukan kumpulan project, catatan riset keamanan, serta tulisan seputar
+              bug hunting dan OSINT yang saya susun berdasarkan pengalaman langsung. Tujuannya sederhana:
+              belajar secara terbuka, berbagi apa yang saya temukan, dan terus mengasah kemampuan secara
+              bertanggung jawab dan etis.
+            </p>
+            <p>
+              Saya percaya keamanan digital yang baik dibangun dari rasa ingin tahu, ketelitian, dan latihan
+              yang konsisten — dan blog ini adalah jejak dari proses tersebut.
+            </p>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat-card glass">
+              <span class="stat-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+              <span class="stat-label">Fokus</span>
+              <span class="stat-value">Web &amp; Network Security</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></span>
+              <span class="stat-label">Environment</span>
+              <span class="stat-value">Linux &amp; Open Source</span>
+            </div>
+            <div class="stat-card glass">
+              <span class="stat-icon"><i class="fa-solid fa-bug" aria-hidden="true"></i></span>
+              <span class="stat-label">Aktivitas</span>
+              <span class="stat-value">Bug Bounty &amp; OSINT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section skills" aria-label="Keahlian">
+      <div class="container">
+        <p class="section-eyebrow reveal">02 — Skills</p>
+        <h2 class="section-title reveal">Keahlian</h2>
+        <p class="section-sub reveal">Kombinasi kemampuan development dan security yang saya gunakan sehari-hari.</p>
+
+        <div class="skills-grid">
+
+          <article class="skill-card glass reveal">
+            <header class="skill-card-head">
+              <i class="fa-solid fa-code" aria-hidden="true"></i>
+              <h3>Frontend</h3>
+            </header>
+            <ul class="skill-list">
+              <li><span>HTML</span><div class="bar"><div class="bar-fill" style="--level:90%"></div></div></li>
+              <li><span>CSS</span><div class="bar"><div class="bar-fill" style="--level:88%"></div></div></li>
+              <li><span>JavaScript</span><div class="bar"><div class="bar-fill" style="--level:82%"></div></div></li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <header class="skill-card-head">
+              <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+              <h3>Programming</h3>
+            </header>
+            <ul class="skill-list">
+              <li><span>Python</span><div class="bar"><div class="bar-fill" style="--level:85%"></div></div></li>
+              <li><span>Bash</span><div class="bar"><div class="bar-fill" style="--level:80%"></div></div></li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <header class="skill-card-head">
+              <i class="fa-solid fa-user-secret" aria-hidden="true"></i>
+              <h3>Cybersecurity</h3>
+            </header>
+            <ul class="skill-list">
+              <li><span>Web Security</span><div class="bar"><div class="bar-fill" style="--level:88%"></div></div></li>
+              <li><span>Bug Hunting</span><div class="bar"><div class="bar-fill" style="--level:85%"></div></div></li>
+              <li><span>OSINT</span><div class="bar"><div class="bar-fill" style="--level:80%"></div></div></li>
+              <li><span>Linux</span><div class="bar"><div class="bar-fill" style="--level:87%"></div></div></li>
+              <li><span>Networking</span><div class="bar"><div class="bar-fill" style="--level:78%"></div></div></li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <header class="skill-card-head">
+              <i class="fa-solid fa-toolbox" aria-hidden="true"></i>
+              <h3>Tools</h3>
+            </header>
+            <ul class="skill-list">
+              <li><span>Git</span><div class="bar"><div class="bar-fill" style="--level:85%"></div></div></li>
+              <li><span>GitHub</span><div class="bar"><div class="bar-fill" style="--level:88%"></div></div></li>
+              <li><span>Burp Suite</span><div class="bar"><div class="bar-fill" style="--level:82%"></div></div></li>
+              <li><span>Nmap</span><div class="bar"><div class="bar-fill" style="--level:80%"></div></div></li>
+              <li><span>Wireshark</span><div class="bar"><div class="bar-fill" style="--level:75%"></div></div></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO ============ -->
+    <section id="portfolio" class="section portfolio" aria-label="Portfolio">
+      <div class="container">
+        <p class="section-eyebrow reveal">03 — Portfolio</p>
+        <h2 class="section-title reveal">Portfolio</h2>
+        <p class="section-sub reveal">Beberapa project dan eksplorasi yang sedang dan telah saya kerjakan.</p>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Cards are also generated dynamically in script.js via the PROJECTS array —
+               edit assets there to add a new project without touching this markup. -->
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-portfolio.svg" alt="Tampilan personal portfolio website" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>Website personal branding dark-mode dengan tema cybersecurity, dibangun dari nol memakai HTML, CSS, dan JavaScript murni.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-linux.svg" alt="Tampilan project konfigurasi Linux" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Linux Projects</h3>
+              <p>Kumpulan konfigurasi, script, dan eksperimen sistem berbasis Linux untuk keperluan sehari-hari dan riset keamanan.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-research.svg" alt="Ilustrasi riset keamanan" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Security Research</h3>
+              <p>Catatan dan proof-of-concept dari eksplorasi kerentanan yang dilakukan secara etis pada environment latihan.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-webdev.svg" alt="Tampilan project web development" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Web Development</h3>
+              <p>Aplikasi dan antarmuka web yang dibangun dengan perhatian pada performa, aksesibilitas, dan keamanan.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-bugbounty.svg" alt="Ilustrasi perjalanan bug hunting" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Bug Hunting Journey</h3>
+              <p>Dokumentasi perjalanan belajar bug bounty, mulai dari reconnaissance hingga penulisan laporan.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project-automation.svg" alt="Ilustrasi automation tools" loading="lazy" width="480" height="300" />
+            </div>
+            <div class="project-body">
+              <h3>Automation Tools</h3>
+              <p>Script dan tool kecil berbasis Python &amp; Bash untuk mengotomatisasi tugas recon dan pengujian keamanan.</p>
+              <a href="#" class="project-link" data-ripple>Detail <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BLOG ============ -->
+    <section id="blog" class="section blog" aria-label="Blog">
+      <div class="container">
+        <p class="section-eyebrow reveal">04 — Blog</p>
+        <h2 class="section-title reveal">Blog</h2>
+        <p class="section-sub reveal">Tulisan seputar cybersecurity, Linux, dan pengembangan web.</p>
+
+        <div class="blog-grid" id="blogGrid">
+
+          <article class="blog-card glass reveal">
+            <div class="blog-thumb">
+              <img src="assets/images/blog-1.svg" alt="Ilustrasi artikel dasar-dasar web security" loading="lazy" width="480" height="260" />
+            </div>
+            <div class="blog-body">
+              <time class="blog-date" datetime="2026-01-12">12 Jan 2026</time>
+              <h3>Dasar-Dasar Web Security untuk Pemula</h3>
+              <p>Ringkasan konsep fundamental yang perlu dipahami sebelum mulai belajar web security secara serius.</p>
+              <a href="#" class="blog-link" data-ripple>Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card glass reveal">
+            <div class="blog-thumb">
+              <img src="assets/images/blog-2.svg" alt="Ilustrasi artikel OSINT" loading="lazy" width="480" height="260" />
+            </div>
+            <div class="blog-body">
+              <time class="blog-date" datetime="2026-02-03">3 Feb 2026</time>
+              <h3>Mengenal OSINT: Teknik dan Etika</h3>
+              <p>Pengenalan singkat tentang Open Source Intelligence, kegunaannya, dan batasan etis dalam penggunaannya.</p>
+              <a href="#" class="blog-link" data-ripple>Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="blog-card glass reveal">
+            <div class="blog-thumb">
+              <img src="assets/images/blog-3.svg" alt="Ilustrasi artikel Linux hardening" loading="lazy" width="480" height="260" />
+            </div>
+            <div class="blog-body">
+              <time class="blog-date" datetime="2026-03-18">18 Mar 2026</time>
+              <h3>Catatan Linux Hardening untuk Server Pribadi</h3>
+              <p>Langkah-langkah dasar yang saya terapkan untuk mengamankan server Linux pribadi dari serangan umum.</p>
+              <a href="#" class="blog-link" data-ripple>Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section contact" aria-label="Kontak">
+      <div class="container">
+        <p class="section-eyebrow reveal">05 — Contact</p>
+        <h2 class="section-title reveal">Hubungi Saya</h2>
+        <p class="section-sub reveal">Terbuka untuk kolaborasi, diskusi keamanan, atau sekadar menyapa.</p>
+
+        <div class="contact-grid">
+
+          <a class="contact-card glass reveal" href="https://github.com/chulochuffed" target="_blank" rel="noopener noreferrer" data-ripple>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+
+          <a class="contact-card glass reveal" href="https://www.instagram.com/chulo_chuffed" target="_blank" rel="noopener noreferrer" data-ripple>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span>Instagram</span>
+          </a>
+
+          <a class="contact-card glass reveal" href="https://www.facebook.com/chulo.chuffed" target="_blank" rel="noopener noreferrer" data-ripple>
+            <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            <span>Facebook</span>
+          </a>
+
+          <a class="contact-card glass reveal" href="https://www.tiktok.com/@chulo.chuffed" target="_blank" rel="noopener noreferrer" data-ripple>
+            <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+            <span>TikTok</span>
+          </a>
+
+          <a class="contact-card glass reveal" href="https://wa.me/qr/HBH3FQKKFIJAP1" target="_blank" rel="noopener noreferrer" data-ripple>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Ganti href="mailto:..." di bawah ini dengan alamat email asli -->
+          <a class="contact-card glass reveal" href="mailto:youremail@example.com" data-ripple>
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Email</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Chulo Chuffed.</p>
+      <p class="footer-tags">Ethical Hacker | Security Researcher | Bug Hunter</p>
+    </div>
+  </footer>
+
+  <!-- ============ BACK TO TOP ============ -->
+  <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
